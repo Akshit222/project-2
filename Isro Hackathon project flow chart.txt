@@ -1,0 +1,40 @@
+Start
+|
+|--- Initialize country_table, city_table, and state_table
+|    |
+|    |--- Read data from "Country.txt"
+|    |--- Read data from "City.txt"
+|    |--- Read data from "State.txt"
+|
+|--- Define the find_geospatial_entities function
+|    |
+|    |--- Input: Sentence
+|    |--- Tokenize the input sentence
+|    |
+|    |--- Create an empty list for geospatial_entities
+|    |
+|    |--- Loop through each token in the input sentence
+|    |    |
+|    |    |--- Check if it matches any name in country_table
+|    |    |    |
+|    |    |    |--- If match found, record token, canonical name, and "Country" in geospatial_entities
+|    |    |
+|    |    |--- If no match in country_table, check city_table
+|    |    |    |
+|    |    |    |--- If match found, record token, canonical name, and "City" in geospatial_entities
+|    |    |
+|    |    |--- If no match in city_table, check state_table
+|    |    |    |
+|    |    |    |--- If match found, record token, canonical name, and "State" in geospatial_entities
+|    |
+|    |--- Output: List of geospatial_entities
+|
+|--- Example usage:
+|    |
+|    |--- Prompt user to enter a sentence
+|    |
+|    |--- Call find_geospatial_entities with the user's input
+|    |
+|    |--- Loop through geospatial_entities and display results
+|
+End
